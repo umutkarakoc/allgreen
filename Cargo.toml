@@ -1,0 +1,36 @@
+[package]
+name = "allgreen"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = {version = "*", features=["full"]}
+serde={version = "*", features = ["derive"]}
+serde_json = "*"
+chrono = {version = "*", features = ["serde"]}
+dotenv = "*"
+config = "*"
+derive_more = "*"
+once_cell = "*"
+sqlx = {version = "0.6.1", features = ["runtime-tokio-rustls", "json", "uuid", "postgres", "chrono", "macros", "default", "offline"]}
+reqwest ={version = "*", default-features = false, features = ["rustls-tls"] }
+futures = "*"
+colored = "*"
+axum={version ="*", features = ["headers"]}
+uuid = {version = "*", features = ["serde", "v4"]}
+magic-crypt = {version = "*"}
+tower = { version = "*", features = ["util"] }
+tower-http = { version = "*", features = ["fs", "trace"] }
+rand_core = "*"
+async-session = "*"
+bcrypt = "*"
+regex="*"
+chrono-humanize="*"
+headers="*"
+http="*"
+maud = "*"
+scraper="*"
+lettre = {version = "*", default-features = false, features = ["smtp-transport", "pool", "hostname", "builder", "rustls-tls"]}
+execute="*"
